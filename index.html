@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invoice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="page">
+        <div id="page-inner">
+            <div class="header"> 
+                <div id="name" contenteditable> Gautam Thakur <br> (Angular Developer) </div>
+                <div id="invoice" contenteditable> INVOICE <br> #1 </div>
+            </div>
+            <br><br>
+                <div><p>Bill to: <br> PSJ Strategywerks LLP</p></div>
+            <br>
+                <div><p>Invoice Date<br> <input type="date" id="myDate" value="2014-02-09"></p></div>
+            <br>
+            <table style="width:98%">
+                <tr style="background-color: #cac705;color: white;">
+                  <th style="width:60%">Description</th>
+                  <th>Hrs</th> 
+                  <th>Unit place</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>Frontend development for Valnet.<br> (<input type="date" id="myDate" value="2014-02-09"> to <input type="date" id="myDate" value="2014-02-09">)</td>
+                  <td><input type="text" id="hours"></td>
+                  <td><input type="text" id="unit-price" onkeyup="total()"></td>
+                  <td id="total"></td>
+                </tr>
+                <tr>
+                  <td style="height:100px">Tasks:<br>
+                    <ol type="1" contenteditable>
+                        <li></li>
+                    </ol>
+                </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+            </table>
+            <br>
+            <table style="width:98%">
+                <tr>
+                    <th style="width:60%">Thank you for your business!</th>
+                    <th style="width:20%">Total</th>                    
+                    <th id="final"></th>
+                  </tr>
+            </table>
+
+            </div>
+
+    </div>
+</body>
+</html>
