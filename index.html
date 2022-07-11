@@ -19,7 +19,7 @@
             <br><br>
                 <div><p>Bill to: <br> PSJ Strategywerks LLP</p></div>
             <br>
-                <div><p>Invoice Date<br> <input type="date" id="myDate" value="2014-02-09"></p></div>
+                <div><p>Invoice Date<br> <input type="date" id="myDate" ></p></div>
             <br>
             <table style="width:98%">
                 <tr style="background-color: #cac705;color: white;">
@@ -29,7 +29,7 @@
                   <th>Amount</th>
                 </tr>
                 <tr>
-                  <td>Frontend development for Valnet.<br> (<input type="date" id="myDate" value="2014-02-09"> to <input type="date" id="myDate" value="2014-02-09">)</td>
+                  <td>Frontend development for Valnet.<br> (<input type="date" id="myDate1" > to <input type="date" id="myDate2" >)</td>
                   <td><input type="text" id="hours"></td>
                   <td><input type="text" id="unit-price" onkeyup="total()"></td>
                   <td id="total"></td>
@@ -39,6 +39,7 @@
                     <ol type="1" contenteditable>
                         <li></li>
                     </ol>
+
                 </td>
                   <td></td>
                   <td></td>
@@ -55,6 +56,15 @@
             </table>
 
             </div>
+
+            <script>
+                //document.getElementsByClassName('myDate').valueAsDate = new Date();
+                document.getElementById('myDate').valueAsDate = new Date();
+                document.getElementById('myDate1').valueAsDate = new Date();
+                document.getElementById('myDate2').valueAsDate = new Date();
+
+
+            </script>
 
     </div>
 </body>
